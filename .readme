@@ -1,0 +1,42 @@
+download the project
+
+cd task-phonebook
+
+run npm i
+
+npm start
+
+Creating A record Payload must be look like as below :
+
+Request type POS
+url: http://localhost:8000/api/phonebook
+{
+"name" : "Zia",
+"number" : "01913195550"
+}
+
+Get all data :
+Request Type GET
+url : http://localhost:8000/api/phonebook-list
+
+Get record by Number:
+Request Type GET
+
+url : http://localhost:8000/api/phonebook/number
+
+Update record:
+Request Type UPDATE
+
+url : http://localhost:8000/api/phonebook
+{
+"id" : "record id",
+"number" : "number"
+}
+
+Delete record:
+Request Type DELETE
+
+url : http://localhost:8000/api/phonebook
+{
+"number" : "desire number"
+}
